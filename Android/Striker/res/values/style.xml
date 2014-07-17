@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="j1sButton">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/button</item>
+		<item name="android:layout_gravity">center</item>
+    </style>
+    <style name="j1sButton.new">
+        <item name="android:text">@string/new_game_label</item>
+    </style> 
+    <style name="j1sButton.about">
+        <item name="android:text">@string/about_game_label</item>
+    </style> 
+    <style name="j1sButton.exit">
+        <item name="android:text">@string/exit_label</item>
+    </style>    
+</resources>

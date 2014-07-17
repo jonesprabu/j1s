@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Frog Jump</string>
+	<string name="rules">Make the 3 frogs in left and 3 frogs in right to jump forward to its destination by clicking on the frog. The frog can travel only in forward direction. Also the frog can take one step or two steps ahead of its current position.</string>
+	<string name="home">Great You done a Good Job</string>
+	<string name="txt">                                                                                                                        Click the add and view to get Solution.</string>
+</resources>

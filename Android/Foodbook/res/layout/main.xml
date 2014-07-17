@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:id="@+id/widget69"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<RelativeLayout
+		android:id="@+id/widget70"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/border"
+		android:layout_weight="0">
+	</RelativeLayout>
+	<LinearLayout
+		android:id="@+id/widget71"
+		android:layout_width="match_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1"
+		android:orientation="horizontal"
+		android:divider="@android:color/transparent"
+  		android:dividerHeight="10.0sp">
+		<ListView
+			android:id="@+id/menuListView"
+			android:layout_width="100dip"
+			android:layout_height="match_parent"
+			android:divider="@android:color/transparent"
+  			android:dividerHeight="10.0sp"/>
+		<ListView
+			android:id="@+id/menuContent"
+			android:layout_width="380dip"
+			android:layout_height="wrap_content"/>
+<!-- 		<ListView
+			android:id="@+id/widget76"
+			android:layout_width="100dip"
+			android:layout_height="wrap_content"/> -->
+	</LinearLayout>
+	<RelativeLayout
+		android:id="@+id/widget72"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/border"
+		android:layout_weight="0">
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<array name="levels">
+<item>@string/level1</item>
+<item>@string/level2</item>
+<item>@string/level3</item>
+<item>@string/level4</item>
+</array>
+<array name="home">
+<item>@string/home</item>
+</array>
+</resources>

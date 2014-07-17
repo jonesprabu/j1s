@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/background_image"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:gravity="center"
+	android:padding="35dip" 
+	android:orientation="vertical">
+
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="wrap_content"
+	    android:layout_height="0dp"
+		android:background="@drawable/cross"
+		android:layout_gravity="center"
+		android:layout_weight="1"
+		android:contentDescription="@string/app_name"/>
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="0dp"
+		android:layout_width="match_parent"
+		android:gravity="center"
+		android:layout_weight="1"
+		android:orientation="vertical">
+		<Button style="@style/j1sButton.new" 
+		    android:id="@+id/new_button" 
+		    android:layout_gravity="center"/>
+		<Button style="@style/j1sButton.about" 
+		    android:id="@+id/about_button" 
+		    android:layout_gravity="center" 
+		    android:layout_below="@+id/new_button"/>
+		<Button style="@style/j1sButton.exit" 
+		    android:id="@+id/exit_button" 
+		    android:layout_gravity="center" 
+		    android:layout_below="@+id/about_button"/>
+	</RelativeLayout>
+</LinearLayout>

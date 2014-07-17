@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:background = "@drawable/background_image"
+	android:paddingLeft="50dip" android:paddingRight="30dip"
+	android:paddingTop="30dip" android:paddingBottom="30dip">
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" android:gravity="center">	
+	<TextView android:id="@+id/about_content"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="@string/about_game" android:textColor="@color/black"/>
+	<TextView android:id="@+id/about_rule1"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="@string/rule1" android:textColor="@color/black"/>
+	<ImageView android:id="@+id/rule1"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:background="@drawable/rule1" android:contentDescription="@string/rule1" /> 
+	<TextView android:id="@+id/about_rule2"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="@string/rule2" android:textColor="@color/black"/>
+	<ImageView android:id="@+id/rule2"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:background="@drawable/rule2" android:contentDescription="@string/rule2"/> 
+	<TextView android:id="@+id/about_rule3"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="@string/rule3" android:textColor="@color/black"/>
+	<TextView android:id="@+id/hint"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="@string/hint" android:textColor="@color/black"/>
+</TableLayout>
+</ScrollView>

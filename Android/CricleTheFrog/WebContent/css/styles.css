@@ -1,0 +1,25 @@
+.leftHalfStone{
+	width:128px;
+	height:172px;
+	display:inline-block;
+/* 	background:url(../images/leftHalfStone.jpg) no-repeat center; */
+}
+
+img{
+	height:auto;
+  	width:auto;
+}
+
+.rightHalfStone{
+	width:128px;
+	height:172px;
+	display:inline-block;
+	/* background:url(../images/rightHalfStone.jpg) no-repeat center; */
+}
+
+.fullStone{
+	width:256px;
+	height:172px;
+	display:inline-block;
+	/* background:url(../images/stone.jpg) no-repeat center; */
+}

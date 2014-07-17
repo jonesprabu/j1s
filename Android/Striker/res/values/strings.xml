@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">War of the Lord</string>
+	<string name="main_title">War of the Lord</string>
+	<string name="new_game_label">New Game</string>
+	<string name="about_game_label">About Game</string>
+	<string name="exit_label">Exit</string>
+	<string name="about_title">About War of the Lord</string>
+	<string name="about_game">\ \n
+		<p><b>War of the Lord,</b> Its a war between good and evil. Convert the devils to Jesus christ.</p> \n\n
+		<p>You are the one who is going to play for Jesus, Initially 2 Jesus will be there in the field.\n 
+		You have to place new Jesus in the empty plates next to existing Jesus, when Jesus is placed in a 
+		new plate the devil next to him will be converted to Jesus. \n More Jesus than the devil make the world peaceful, so you will be crowned as a winner.</p>\n\n
+	</string>
+	<string name="rule1">\
+		<b>Rules:</b>\n
+		<p> 1.	You can place new Jesus by touching any one of the empty plates next to your existing Jesus.</p>\n
+	</string>
+	<string name="rule2">\	
+				<p>OR</p>\n
+		<p> 2.	Relocating your existing Jesus, by selecting a Jesus who you wish to relocate, he will 
+		offer you some possible places. (which are of one hop by vertically, horizontally and diagonally)</p>\n 
+	</string>
+	<string name="rule3">\
+		<p>	3.	More Jesus than the devil make the world peaceful, so you will be crowned as a winner.</p>\n\n
+	</string>
+	<string name="hint">\
+		<b>Hint:</b>\n
+			<p>Placing new Jesus or Relocating Jesus, when done wisely, can convert more devil to Jesus.</p>\n\n\n
+		                         
+	</string>
+	<string name="new_game_title">War Field Levels</string>
+	<string name="level1">Level I</string>
+	<string name="level2">Level II</string>
+	<string name="level3">Level III</string>
+	<string name="level4">Level IV</string>
+	<string name="winner_title">Result</string>
+	<string name="androy_wins">Dont worry you will beat the devil.</string>
+	<string name="player_wins">Congrats!!! You Made World peaceful. God Bless you.</string>
+	<string name="home">!!!Click Here to Try Again!!!</string>
+</resources>

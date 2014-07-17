@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.j1s.games.frogjump" android:installLocation="auto"
+      android:versionCode="5"
+      android:versionName="1.4">
+      
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="19" />
+    <!-- Airpush Permission's -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />	
+
+
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name="com.j1s.games.frogjump.Main" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+                 
+		
+		<!-- Airpush SDK Requirements -->
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="4030500" />
+        <meta-data
+            android:name="com.yrkfgo.assxqx4.APPID"
+            android:value="30775" />
+        <meta-data
+            android:name="com.yrkfgo.assxqx4.APIKEY"
+            android:value="android*1318449575701366408" />
+
+        <activity
+            android:name="com.yrkfgo.assxqx4.AdActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.yrkfgo.assxqx4.BrowserActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.yrkfgo.assxqx4.VActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <service
+            android:name="com.yrkfgo.assxqx4.LService"
+            android:exported="false" >
+        </service>
+
+        <receiver
+            android:name="com.yrkfgo.assxqx4.BootReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <!-- End of Airpush Components --> 
+    </application>
+    
+    
+  	
+</manifest>

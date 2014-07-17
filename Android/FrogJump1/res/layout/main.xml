@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/baseLayout" >
+    <com.google.ads.AdView android:id="@+id/adView1"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         ads:adUnitId="a14e97aa2d0b0a9"
+                         ads:adSize="BANNER"
+                         ads:loadAdOnCreate="true"/>
+    <TextView android:id="@+id/txtView" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#ff0000"
+    		android:text="@string/txt" android:textStyle="bold"
+    	
+    />
+    <TableLayout android:id="@+id/table_layout" >
+    	<TableRow android:id="@+id/table_row_layout">
+    		<ImageButton android:id="@+id/stone1"
+    			android:src="@drawable/stone" />
+    		<ImageButton android:id="@+id/stone2"
+    			android:src="@drawable/stone" />
+    		<ImageButton android:id="@+id/stone3"
+    			android:src="@drawable/stone" />
+    		<ImageButton android:id="@+id/stone4"
+    			android:src="@drawable/stone" />
+    		<ImageButton android:id="@+id/stone5"
+    			android:src="@drawable/stone" />
+    		<ImageButton android:id="@+id/stone6"
+    			android:src="@drawable/stone" />
+    		<ImageButton android:id="@+id/stone7"
+    			android:src="@drawable/stone" />
+    	</TableRow>
+    </TableLayout>
+</RelativeLayout>
