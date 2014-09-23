@@ -1,8 +1,16 @@
 package com.j1s.games.trapthefrog;
 
+import android.content.Context;
+import android.graphics.drawable.AnimationDrawable;
+import android.media.MediaPlayer;
+import android.os.Handler;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.ImageView;
 
 
-/*public class StoneView extends ImageView {
+
+public class StoneView extends ImageView {
 	
 	public static final int FULL_STONE = 1;
 	public static final int LEFT_HALF_STONE = 2;
@@ -29,9 +37,9 @@ package com.j1s.games.trapthefrog;
 		}
 		
 		super.setOnTouchListener(new OnTouchListener() {
-			
+
+			@Override
 			public boolean onTouch(View v, MotionEvent event) {
-				
 				final StoneView stone = (StoneView) v;
 				
 				if(stone.isDrowned != true){
@@ -68,9 +76,9 @@ package com.j1s.games.trapthefrog;
 			}
 		});
 	}
-	*/
 
-public class StoneView{
+
+/*public class StoneView{
 	public static void main(String arg[]){
 		String str1 = "Abhishek";
 		String str2 = "Aishwarya";
@@ -87,12 +95,12 @@ public class StoneView{
 			}			
 		}
 		System.out.println("Count -- "+count);
-		/*System.out.println(flames.charAt(count%6));
+		System.out.println(flames.charAt(count%6));
 		
 		for(int i=0; i<count; i++){
 			
-		}*/
-	}
+		}
+	}*/
 	
 	
 	
