@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Home!</string>
+    <string name="app_name">FollowMe</string>
+    <string name="starttext">Click start to Play</string>
+    <string name="startbuttxt">Start</string>
+    <string name="abtbuttext">About Me</string>
+    <string name="exitbuttxt">Exit</string>
+    <string name="about_title"><b>Follow Me</b></string>
+    <string name="about_game">
+       	<p>
+    	This is a Game which will increase your concentration, memory and observation power.
+    	First you have to watch the buttons which will glow with sound in a sequence, 
+    	In the first level, three buttons will glow in a random sequence, 
+    	once you observed the sequence, you have to follow the same sequence by touching 
+    	the buttons...</p>
+    	<p>
+    	What you are waiting for!!! Go... start download and play, Get Addicted.
+    	</p>
+    	
+
+    </string>
+</resources>

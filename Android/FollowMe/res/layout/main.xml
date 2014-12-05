@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+	android:background="@drawable/bg"
+	android:layout_height="fill_parent" android:layout_width="fill_parent"
+	android:padding="30dip" android:orientation="horizontal">
+	<LinearLayout android:orientation="vertical"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:layout_gravity="center_vertical">
+		<!-- <com.google.ads.AdView android:id="@+id/adViewMain" android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="top|center"
+                         ads:adUnitId="a14e948e6a11812"
+                         ads:adSize="BANNER"
+                         ads:loadAdOnCreate="true"/> -->
+		<ImageView 
+			android:layout_width="200dp" android:layout_height="200dp"
+			android:scaleType="center" android:background="@drawable/followme" 
+			android:layout_gravity="center_horizontal"/>
+
+		<Button android:id="@+id/start_button" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="@string/startbuttxt" />
+		<Button android:id="@+id/about_button" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="@string/abtbuttext" />
+		<Button android:id="@+id/exit_button" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="@string/exitbuttxt" />
+	</LinearLayout>
+</LinearLayout>
