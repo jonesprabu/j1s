@@ -1,0 +1,11 @@
+<resources>
+    <color name="teal">#009688</color>
+    <color name="black_87">#DD000000</color>
+    <color name="black_54">#89000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="job_feed_bg">#d3d6db</color>
+    <color name="job_feed_item_bg">#ffffff</color>
+    <color name="job_feed_item_border">#c2c3c8</color>
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>
+</resources>

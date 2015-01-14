@@ -1,10 +1,9 @@
 package com.j1s.expenseanalyser;
 
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import com.j1s.model.Transaction;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -17,6 +16,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
+
+import com.j1s.model.Transaction;
+import com.j1s.model.TransactionsList;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -74,9 +77,18 @@ public class MainActivity extends ActionBarActivity {
 		try{
 			SMSAnalyzer smsAnalyzer  = new SMSAnalyzer(getContentResolver());
 			String smsAddress = "VM-Citibk";
-			String dateFrom = "2014-10-01";
-			String dateTo = "2014-10-30";
-			String[] whereCondtionVal = {smsAddress};//, dateFrom, dateTo};
+			//String dateFrom = "2014-10-01";
+			//String dateTo = "2014-10-30";
+			
+			//SimpleDateFormat dateFormatter = new SimpleDateFormat("dd-MMM-yyyy");
+			Calendar dateFrom = Calendar.getInstance();
+			dateFrom.set(2014, Calendar.NOVEMBER, 23);
+			
+			Calendar dateTo = Calendar.getInstance();
+			dateTo.set(2014, Calendar.DECEMBER, 23);
+			
+			String[] whereCondtionVal = {smsAddress, ""+dateFrom.getTimeInMillis(), ""+dateTo.getTimeInMillis()};
+			
 			Map<String, Map<String, String>> msgSpliterKeys = new HashMap<String, Map<String, String>>();
 			
 			Map<String, String> spentAmtBeforeAter = new HashMap<String, String>();
@@ -95,9 +107,9 @@ public class MainActivity extends ActionBarActivity {
 			msgSpliterKeys.put("spentOnKey", spentOnBeforeAter);
 			msgSpliterKeys.put("spentAtKey", spentAtBeforeAter);
 			
-			List<Transaction> swipeList  =  smsAnalyzer.readTransactions(msgSpliterKeys, whereCondtionVal);
+			TransactionsList transactionsList  =  smsAnalyzer.readTransactions(msgSpliterKeys, whereCondtionVal);
 			//showTransactionInMonthView(swipeList);
-			showTransactionInListView(swipeList);
+			showTransactionInListView(transactionsList);
 		} catch(Exception e){
 			Log.i("Exception", e.getMessage());
 			e.printStackTrace();
@@ -105,23 +117,28 @@ public class MainActivity extends ActionBarActivity {
 		
 	}
 	
-	public void showTransactionInMonthView(List<Transaction> swipeList) throws Exception{
+	public void showTransactionInMonthView(TransactionsList transactionsList) throws Exception{
 		ListView listView = (ListView) findViewById(R.id.showSMSList);
 		
 		ArrayAdapter<Transaction> arrayAdapter = new ArrayAdapter<Transaction>(this,
-	              android.R.layout.two_line_list_item, android.R.id.text1, swipeList);
+	              android.R.layout.two_line_list_item, android.R.id.text1, transactionsList);
 		
 		listView.setAdapter(arrayAdapter);
-			
+
 	}
 	
-	public void showTransactionInListView(List<Transaction> swipeList) throws Exception{
+	public void showTransactionInListView(TransactionsList transactionsList) throws Exception{
 		ListView listView = (ListView) findViewById(R.id.showSMSList);
 		
 		ArrayAdapter<Transaction> arrayAdapter = new ArrayAdapter<Transaction>(this,
-	              android.R.layout.two_line_list_item, android.R.id.text1, swipeList);
+	              android.R.layout.two_line_list_item, android.R.id.text1, transactionsList);
 		
 		listView.setAdapter(arrayAdapter);
+		Log.i("JonesInfo" ,"Total Amt : " + transactionsList.getTotalSpentAmt());
+		TextView headerView  = new TextView(this);
+		headerView.setText("Total Amt : " + transactionsList.getTotalSpentAmt());
+		listView.addHeaderView(headerView);
+		Log.i("JonesInfo" ,"<<<<<<<<<<<<<<<THE END>>>>>>>>>>>>>>>>>>>>");
 			
 	}
 

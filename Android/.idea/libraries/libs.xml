@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/FrogJump1/libs/com-yrkfgo-assxqx4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/FrogJump1/libs/google-play-services.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

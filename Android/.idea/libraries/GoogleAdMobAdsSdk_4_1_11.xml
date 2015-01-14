@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="GoogleAdMobAdsSdk-4.1.11">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/TrapTheFrog/lib/GoogleAdMobAdsSdk-4.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

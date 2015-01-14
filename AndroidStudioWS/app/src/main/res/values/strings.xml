@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Project1</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="flipper_content_1">flipper_content_1</string>
+    <string name="flipper_content_2">flipper_content_2</string>
+    <string name="flipper_content_3">flipper_content_3</string>
+    <string name="flipper_content_4">flipper_content_4</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="display_profile">Disply Profile</string>
+    <string name="dummy_profile_name">Randy Shy (Bronze Hunter)</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+
+    <string-array name="drawer_list">
+        <item>Inbox</item>
+        <item>My Favourites</item>
+        <item>Following</item>
+        <item>My Rewards</item>
+        <item>Settings</item>
+        <item>Sign Out</item>
+    </string-array>
+
+
+
+</resources>

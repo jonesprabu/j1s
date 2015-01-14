@@ -1,21 +1,37 @@
 package com.j1s.model;
 
+import com.j256.ormlite.field.DatabaseField;
+import com.j256.ormlite.table.DatabaseTable;
 
+@DatabaseTable(tableName="transaction")
 public class Transaction {
-	private String 	id;
+	@DatabaseField(generatedId=true)
+	private int id;
+	@DatabaseField
 	private String 	address;
+	@DatabaseField
 	private String 	msg;
-	private String 	spentAmt;
+	@DatabaseField
+	private int 	spentAmt;
+	@DatabaseField
 	private String 	spentOn;
+	@DatabaseField
 	private String 	spentAt;
-	
-		
-	public String getId() {
+	@DatabaseField
+	private int 	dd;
+	@DatabaseField
+	private int 	mm;
+	@DatabaseField
+	private int 	yyyy;
+	@DatabaseField
+	private long 	date;
+			
+	public int getId() {
 		return id;
 	}
 
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;	
 	}
 
@@ -40,12 +56,12 @@ public class Transaction {
 	}
 	
 	
-	public String getSpentAmt() {
+	public int getSpentAmt() {
 		return spentAmt;
 	}
 
 
-	public void setSpentAmt(String spentAmt) {
+	public void setSpentAmt(int spentAmt) {
 		this.spentAmt = spentAmt;
 	}
 
@@ -67,6 +83,46 @@ public class Transaction {
 
 	public void setSpentAt(String spentAt) {
 		this.spentAt = spentAt;
+	}
+
+
+	public int getDd() {
+		return dd;
+	}
+
+
+	public void setDd(int dd) {
+		this.dd = dd;
+	}
+
+
+	public int getMm() {
+		return mm;
+	}
+
+
+	public void setMm(int mm) {
+		this.mm = mm;
+	}
+
+
+	public int getYyyy() {
+		return yyyy;
+	}
+
+
+	public void setYyyy(int yyyy) {
+		this.yyyy = yyyy;
+	}
+
+
+	public long getDate() {
+		return date;
+	}
+
+
+	public void setDate(long date) {
+		this.date = date;
 	}
 
 

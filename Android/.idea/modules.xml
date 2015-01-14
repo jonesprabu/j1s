@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ExpenseAnalyser/ExpenseAnalyser.iml" filepath="$PROJECT_DIR$/ExpenseAnalyser/ExpenseAnalyser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Flames/Flames.iml" filepath="$PROJECT_DIR$/Flames/Flames.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FollowMe/FollowMe.iml" filepath="$PROJECT_DIR$/FollowMe/FollowMe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Foodbook/Foodbook.iml" filepath="$PROJECT_DIR$/Foodbook/Foodbook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FrogJump1/FrogJump1.iml" filepath="$PROJECT_DIR$/FrogJump1/FrogJump1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MoneyView/MoneyView.iml" filepath="$PROJECT_DIR$/MoneyView/MoneyView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Project1/Project1.iml" filepath="$PROJECT_DIR$/Project1/Project1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Striker/Striker.iml" filepath="$PROJECT_DIR$/Striker/Striker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Support13Demos/Support13Demos.iml" filepath="$PROJECT_DIR$/Support13Demos/Support13Demos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Support4Demos/Support4Demos.iml" filepath="$PROJECT_DIR$/Support4Demos/Support4Demos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SupportAppNavigation/SupportAppNavigation.iml" filepath="$PROJECT_DIR$/SupportAppNavigation/SupportAppNavigation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TestProj/TestProj.iml" filepath="$PROJECT_DIR$/TestProj/TestProj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TrapTheFrog/TrapTheFrog.iml" filepath="$PROJECT_DIR$/TrapTheFrog/TrapTheFrog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appcompat_v7/appcompat_v7.iml" filepath="$PROJECT_DIR$/appcompat_v7/appcompat_v7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/google-play-services_lib/google-play-services_lib.iml" filepath="$PROJECT_DIR$/google-play-services_lib/google-play-services_lib.iml" />
+    </modules>
+  </component>
+</project>
+

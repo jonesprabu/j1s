@@ -1,0 +1,8 @@
+<resources>
+    <!-- Strings related to login -->
+    <string name="confirm_password">Confirm Password</string>
+    <string name="existing_user_login"><u>Existing User? Login.</u></string>
+    <string name="register_using">Register Using : </string>
+    <string name="goolge_plus_icon_desc">Google Plus Icon</string>
+    <string name="linkedin_icon_desc">LinkedIn Icon</string>
+</resources>

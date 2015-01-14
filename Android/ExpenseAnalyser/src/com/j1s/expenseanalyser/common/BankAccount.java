@@ -4,7 +4,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 
 import com.j1s.model.Transaction;
-import com.j1s.model.TransactionsInAMonth;
+import com.j1s.model.TransactionsMonthly;
 
 public abstract class BankAccount {
 	
@@ -15,7 +15,7 @@ public abstract class BankAccount {
 	protected int bankIcon;
 	
 	protected List<Transaction> transactions;
-	protected LinkedHashMap<String, TransactionsInAMonth> transactionsMonthWise;
+	protected LinkedHashMap<String, TransactionsMonthly> transactionsMonthWise;
 	
 	
 	
@@ -51,11 +51,11 @@ public abstract class BankAccount {
 	public void setTransactions(List<Transaction> transactions) {
 		this.transactions = transactions;
 	}
-	public LinkedHashMap<String, TransactionsInAMonth> getTransactionsMonthWise() {
+	public LinkedHashMap<String, TransactionsMonthly> getTransactionsMonthWise() {
 		return transactionsMonthWise;
 	}
 	public void setTransactionsMonthWise(
-			LinkedHashMap<String, TransactionsInAMonth> transactionsMonthWise) {
+			LinkedHashMap<String, TransactionsMonthly> transactionsMonthWise) {
 		this.transactionsMonthWise = transactionsMonthWise;
 	}
 	

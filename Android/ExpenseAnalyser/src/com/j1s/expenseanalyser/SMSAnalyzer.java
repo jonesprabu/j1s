@@ -4,7 +4,6 @@ package com.j1s.expenseanalyser;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -14,10 +13,10 @@ import android.content.ContentResolver;
 import android.database.Cursor;
 import android.net.Uri;
 import android.provider.Telephony.Sms;
-import android.text.format.DateFormat;
 import android.util.Log;
 
 import com.j1s.model.Transaction;
+import com.j1s.model.TransactionsList;
 
 public class SMSAnalyzer {
 
@@ -29,8 +28,8 @@ public class SMSAnalyzer {
 		this.contentResolver = contentResolver;
 	}
 	
-	public List<Transaction> readTransactions(Map<String, Map<String, String>> msgSplitterMap, String[] whereConditionVal) throws Exception{
-		List<Transaction> transactionList = new ArrayList<Transaction>();
+	public TransactionsList readTransactions(Map<String, Map<String, String>> msgSplitterMap, String[] whereConditionVal) throws Exception{
+		TransactionsList transactionsList = new TransactionsList();
 		String smsStr;
 		String smsMsg;
 		Map<String, String> spentAmtKey = msgSplitterMap.get("spentAmtKey");
@@ -42,9 +41,11 @@ public class SMSAnalyzer {
 
 		int startTime = (int) System.currentTimeMillis();
 		
+		
 		Log.i("JonesInfo", "Start read SMS");
 		String[] columnsToFetch = new String[]{Sms.ADDRESS, Sms.BODY, Sms.DATE};
-		String whereCondition = Sms.ADDRESS+" =  ? ";//AND date("+Sms.DATE+") >= ? AND date("+Sms.DATE+") <= ?";
+		//String whereCondition = Sms.ADDRESS+" =  ? ";//AND date("+Sms.DATE+") >= ? AND date("+Sms.DATE+") <= ?";
+		String whereCondition = Sms.ADDRESS+" =  ? AND "+Sms.DATE+" >= ? AND "+Sms.DATE+" <= ?";
 		//String whereCondition = Sms.ADDRESS+" = ? strftime('%s', "+Sms.DATE+") BETWEEN strftime('%s', ?) AND strftime('%s', ?)";
 
 	    Cursor cur = contentResolver.query(uriSMSURI, columnsToFetch, whereCondition, whereConditionVal, null);
@@ -75,17 +76,17 @@ public class SMSAnalyzer {
 		    	
 		    	Transaction transaction = new Transaction();
 		    	transaction.setAddress(cur.getString(0));
-		    	transaction.setSpentAmt(spentAmt);
+		    	transaction.setSpentAmt(spentAmt.replaceAll("[^\\d.]", ""));
 		    	transaction.setSpentOn(spentOn);  	
 		    	transaction.setSpentAt(spentAt);
 		    	transaction.setMsg(smsMsg);
 		    	//transaction.setDime(cur.getString(2));
-		    	transactionList.add(transaction);
+		    	transactionsList.add(transaction);
 	    	}
 		    	
 	    }
 	    cur.close();
 	    Log.i("JonesInfo", "End read SMS -- MilliSec : "+(System.currentTimeMillis() - startTime));
-	    return transactionList;		
+	    return transactionsList;		
 	}
 }
